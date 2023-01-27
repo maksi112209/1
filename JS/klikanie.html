@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pierwsza</title>
+    <title>Klikanie</title>
 </head>
 <body>
-    <h1 id="tytuł" onclisc="zmien()">Pierwsza strona </h1>
+    <h1 id="tytul" onclick="zmiana()">kliknij!</h1>
+
     <script>
-        console.log("test")
+    function zmiana(){
         let tytul = document.getElementById('tytul')
+        tytul.innerHTML = "nigga           bolz"
+        tytul.style.color='pink'
+        tytul.style.background='blue'
         
-
-        function zmien(){
-            tytul.innerHTML = "zmiana zmiana zmiana!"
-        }
-    
-
+    }
     </script>
-
 </body>
 </html>
